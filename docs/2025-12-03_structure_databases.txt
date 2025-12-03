@@ -1,0 +1,10 @@
+Databases' structure:
+
+DB 1 ~ 100 GB
+
+~ 30 GB iso files
+~ 50+ GB data/text/audio
+~ 20 GB image/video
+
+NOTE: mostly non-synthetic data, synthetic was created using Faker (python version), info available on: https://github.com/joke2k/faker
+
