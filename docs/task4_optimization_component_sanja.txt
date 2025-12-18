@@ -1,0 +1,17 @@
+Task 4 – Optimization Component
+Author: Sanja Domjanic
+
+Chosen engine: Restic
+Improvement: Reduced metadata memory footprint via lazy master index initialization.
+
+Summary:
+- The repository’s master index is no longer created at repository initialization.
+- The index is created on first use (lazy init), marked with // SANJA comments.
+
+Implementation:
+See implementation/task4_restic_lazy_index.md for the link to the code branch and key file.
+
+Evaluation (before/after):
+- Initial backup: 9m 44s, data added 1.293 GiB
+- Subsequent backups: ~2s, data added 0 B
+- Peak RAM reduced ~53% (232 MB → 108 MB)
